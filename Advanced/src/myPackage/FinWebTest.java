@@ -117,7 +117,7 @@ public class FinWebTest {
 
 	    driver.findElement(By.name("Submit")).click();
 	    try {
-			TimeUnit.SECONDS.sleep(10);
+			TimeUnit.SECONDS.sleep(3);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
