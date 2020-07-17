@@ -19,11 +19,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class FinWebTest {
-	public static void main(String args[])
-	{
-		FinWebTest fwt=new FinWebTest();
-		
-	}
 	WebDriver driver ;
 	
 	@BeforeMethod
@@ -32,6 +27,7 @@ public class FinWebTest {
 		driver= new ChromeDriver();
 
 		driver.navigate().to("http://automationpractice.com/index.php");
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		
